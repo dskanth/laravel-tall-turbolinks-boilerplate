@@ -19,3 +19,15 @@
     $PHP_CS_FIXER fix --verbose "$line";
     git add "$line";
     done
+    
+    Installation steps:
+    
+    git clone https://github.com/vitoo/laravel.git
+	cd laravel
+	composer update
+	cp .env.example .env
+	update .env file with DB credentials
+	php artisan key:generate
+	npm install
+	npm run dev
+	php artisan serve
